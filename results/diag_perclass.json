@@ -1,0 +1,1333 @@
+{
+ "config": {
+  "centring": 1,
+  "thr": 0.05,
+  "pool_cap": 3400,
+  "pool_rows": 61200,
+  "pool_subsampled": true,
+  "extra_w": 0.35,
+  "folds": 5,
+  "fold_seed": 0,
+  "panel_seed": 0,
+  "temp": 2.0,
+  "views": [
+   "char_wb35",
+   "word13",
+   "word26raw",
+   "funcword"
+  ],
+  "n_jobs": 20
+ },
+ "labels": [
+  "claude-fable-5",
+  "claude-opus-4-6",
+  "claude-opus-4-8",
+  "claude-opus-5",
+  "claude-sonnet-5",
+  "gemini-3.1-pro-preview",
+  "gemini-3.6-flash",
+  "gemini-3.7-flash",
+  "gemini-3.8-flash",
+  "glm-5.3",
+  "glm-5.3-flash",
+  "gpt-5.5",
+  "gpt-5.6-luna",
+  "gpt-5.6-sol",
+  "gpt-5.6-terra",
+  "gpt-6-astra",
+  "kimi-k3",
+  "qwen3.8-max"
+ ],
+ "families": {
+  "claude-fable-5": "anthropic",
+  "claude-opus-4-6": "anthropic",
+  "claude-opus-4-8": "anthropic",
+  "claude-opus-5": "anthropic",
+  "claude-sonnet-5": "anthropic",
+  "gemini-3.1-pro-preview": "google",
+  "gemini-3.6-flash": "google",
+  "gemini-3.7-flash": "google",
+  "gemini-3.8-flash": "google",
+  "glm-5.3": "zai",
+  "glm-5.3-flash": "zai",
+  "gpt-5.5": "openai",
+  "gpt-5.6-luna": "openai",
+  "gpt-5.6-sol": "openai",
+  "gpt-5.6-terra": "openai",
+  "gpt-6-astra": "openai",
+  "kimi-k3": "moonshot",
+  "qwen3.8-max": "qwen"
+ },
+ "variants": {
+  "full18/plain": {
+   "bacc": 0.40042754163559535,
+   "accuracy": 0.400518710633568,
+   "n": 2699
+  },
+  "full18/centred": {
+   "bacc": 0.44153865274670645,
+   "accuracy": 0.44164505372360136,
+   "n": 2699
+  },
+  "partial2/plain": {
+   "bacc": 0.36878501209641557,
+   "accuracy": 0.37446808510638296,
+   "n": 235
+  },
+  "partial2/centred": {
+   "bacc": 0.34421200550586506,
+   "accuracy": 0.3404255319148936,
+   "n": 235
+  }
+ },
+ "primary": "full18/centred",
+ "pooled": {
+  "bacc": 0.44153865274670645,
+  "accuracy": 0.44164505372360136,
+  "n": 2699,
+  "per_class_recall": {
+   "claude-fable-5": 0.15436241610738255,
+   "claude-opus-4-6": 0.5333333333333333,
+   "claude-opus-4-8": 0.29333333333333333,
+   "claude-opus-5": 0.8333333333333334,
+   "claude-sonnet-5": 0.4866666666666667,
+   "gemini-3.1-pro-preview": 0.9066666666666666,
+   "gemini-3.6-flash": 0.6533333333333333,
+   "gemini-3.7-flash": 0.4533333333333333,
+   "gemini-3.8-flash": 0.34,
+   "glm-5.3": 0.17333333333333334,
+   "glm-5.3-flash": 0.22666666666666666,
+   "gpt-5.5": 0.5666666666666667,
+   "gpt-5.6-luna": 0.38666666666666666,
+   "gpt-5.6-sol": 0.21333333333333335,
+   "gpt-5.6-terra": 0.3466666666666667,
+   "gpt-6-astra": 0.76,
+   "kimi-k3": 0.04,
+   "qwen3.8-max": 0.58
+  },
+  "support": {
+   "claude-fable-5": 149,
+   "claude-opus-4-6": 150,
+   "claude-opus-4-8": 150,
+   "claude-opus-5": 150,
+   "claude-sonnet-5": 150,
+   "gemini-3.1-pro-preview": 150,
+   "gemini-3.6-flash": 150,
+   "gemini-3.7-flash": 150,
+   "gemini-3.8-flash": 150,
+   "glm-5.3": 150,
+   "glm-5.3-flash": 150,
+   "gpt-5.5": 150,
+   "gpt-5.6-luna": 150,
+   "gpt-5.6-sol": 150,
+   "gpt-5.6-terra": 150,
+   "gpt-6-astra": 150,
+   "kimi-k3": 150,
+   "qwen3.8-max": 150
+  },
+  "board_like_bacc": 0.44081418227025804,
+  "board_like_sd": 0.02358729973157024,
+  "board_like_per_class": {
+   "claude-fable-5": 0.17293109668109669,
+   "claude-opus-4-6": 0.5228591792194732,
+   "claude-opus-4-8": 0.26744882568411976,
+   "claude-opus-5": 0.8029933301992125,
+   "claude-sonnet-5": 0.48653406642377234,
+   "gemini-3.1-pro-preview": 0.9283941058941059,
+   "gemini-3.6-flash": 0.6914544324354697,
+   "gemini-3.7-flash": 0.48517719208895677,
+   "gemini-3.8-flash": 0.30308212620712616,
+   "glm-5.3": 0.16422806360306358,
+   "glm-5.3-flash": 0.2410062772195125,
+   "gpt-5.5": 0.5747153989801048,
+   "gpt-5.6-luna": 0.3663188078261607,
+   "gpt-5.6-sol": 0.1991576354502051,
+   "gpt-5.6-terra": 0.3316555183292799,
+   "gpt-6-astra": 0.7784311405828434,
+   "kimi-k3": 0.01464160839160839,
+   "qwen3.8-max": 0.6036264756485343
+  }
+ },
+ "max_recall_reference": 0.9066666666666666,
+ "points_ranking": [
+  {
+   "label": "kimi-k3",
+   "family": "moonshot",
+   "support": 150,
+   "recall": 0.04,
+   "miss_rate": 0.96,
+   "points_available": 0.04814814814814814,
+   "points_to_perfect": 0.05333333333333333
+  },
+  {
+   "label": "claude-fable-5",
+   "family": "anthropic",
+   "support": 149,
+   "recall": 0.15436241610738255,
+   "miss_rate": 0.8456375838926175,
+   "points_available": 0.041794680586626894,
+   "points_to_perfect": 0.04697986577181208
+  },
+  {
+   "label": "glm-5.3",
+   "family": "zai",
+   "support": 150,
+   "recall": 0.17333333333333334,
+   "miss_rate": 0.8266666666666667,
+   "points_available": 0.04074074074074074,
+   "points_to_perfect": 0.045925925925925926
+  },
+  {
+   "label": "gpt-5.6-sol",
+   "family": "openai",
+   "support": 150,
+   "recall": 0.21333333333333335,
+   "miss_rate": 0.7866666666666666,
+   "points_available": 0.038518518518518514,
+   "points_to_perfect": 0.0437037037037037
+  },
+  {
+   "label": "glm-5.3-flash",
+   "family": "zai",
+   "support": 150,
+   "recall": 0.22666666666666666,
+   "miss_rate": 0.7733333333333333,
+   "points_available": 0.03777777777777777,
+   "points_to_perfect": 0.04296296296296296
+  },
+  {
+   "label": "claude-opus-4-8",
+   "family": "anthropic",
+   "support": 150,
+   "recall": 0.29333333333333333,
+   "miss_rate": 0.7066666666666667,
+   "points_available": 0.03407407407407407,
+   "points_to_perfect": 0.03925925925925926
+  },
+  {
+   "label": "gemini-3.8-flash",
+   "family": "google",
+   "support": 150,
+   "recall": 0.34,
+   "miss_rate": 0.6599999999999999,
+   "points_available": 0.03148148148148148,
+   "points_to_perfect": 0.03666666666666666
+  },
+  {
+   "label": "gpt-5.6-terra",
+   "family": "openai",
+   "support": 150,
+   "recall": 0.3466666666666667,
+   "miss_rate": 0.6533333333333333,
+   "points_available": 0.031111111111111107,
+   "points_to_perfect": 0.0362962962962963
+  },
+  {
+   "label": "gpt-5.6-luna",
+   "family": "openai",
+   "support": 150,
+   "recall": 0.38666666666666666,
+   "miss_rate": 0.6133333333333333,
+   "points_available": 0.02888888888888889,
+   "points_to_perfect": 0.03407407407407407
+  },
+  {
+   "label": "gemini-3.7-flash",
+   "family": "google",
+   "support": 150,
+   "recall": 0.4533333333333333,
+   "miss_rate": 0.5466666666666666,
+   "points_available": 0.025185185185185185,
+   "points_to_perfect": 0.030370370370370367
+  },
+  {
+   "label": "claude-sonnet-5",
+   "family": "anthropic",
+   "support": 150,
+   "recall": 0.4866666666666667,
+   "miss_rate": 0.5133333333333333,
+   "points_available": 0.02333333333333333,
+   "points_to_perfect": 0.028518518518518516
+  },
+  {
+   "label": "claude-opus-4-6",
+   "family": "anthropic",
+   "support": 150,
+   "recall": 0.5333333333333333,
+   "miss_rate": 0.4666666666666667,
+   "points_available": 0.02074074074074074,
+   "points_to_perfect": 0.025925925925925925
+  },
+  {
+   "label": "gpt-5.5",
+   "family": "openai",
+   "support": 150,
+   "recall": 0.5666666666666667,
+   "miss_rate": 0.43333333333333335,
+   "points_available": 0.018888888888888886,
+   "points_to_perfect": 0.024074074074074074
+  },
+  {
+   "label": "qwen3.8-max",
+   "family": "qwen",
+   "support": 150,
+   "recall": 0.58,
+   "miss_rate": 0.42000000000000004,
+   "points_available": 0.01814814814814815,
+   "points_to_perfect": 0.023333333333333334
+  },
+  {
+   "label": "gemini-3.6-flash",
+   "family": "google",
+   "support": 150,
+   "recall": 0.6533333333333333,
+   "miss_rate": 0.3466666666666667,
+   "points_available": 0.014074074074074072,
+   "points_to_perfect": 0.01925925925925926
+  },
+  {
+   "label": "gpt-6-astra",
+   "family": "openai",
+   "support": 150,
+   "recall": 0.76,
+   "miss_rate": 0.24,
+   "points_available": 0.008148148148148146,
+   "points_to_perfect": 0.013333333333333332
+  },
+  {
+   "label": "claude-opus-5",
+   "family": "anthropic",
+   "support": 150,
+   "recall": 0.8333333333333334,
+   "miss_rate": 0.16666666666666663,
+   "points_available": 0.004074074074074069,
+   "points_to_perfect": 0.009259259259259257
+  },
+  {
+   "label": "gemini-3.1-pro-preview",
+   "family": "google",
+   "support": 150,
+   "recall": 0.9066666666666666,
+   "miss_rate": 0.09333333333333338,
+   "points_available": 0.0,
+   "points_to_perfect": 0.005185185185185188
+  }
+ ],
+ "per_fold": [
+  {
+   "fold": 0,
+   "bacc": 0.46666666666666656,
+   "n": 540,
+   "accuracy": 0.4666666666666667,
+   "per_class_recall": {
+    "claude-fable-5": 0.26666666666666666,
+    "claude-opus-4-6": 0.4666666666666667,
+    "claude-opus-4-8": 0.26666666666666666,
+    "claude-opus-5": 0.8666666666666667,
+    "claude-sonnet-5": 0.5333333333333333,
+    "gemini-3.1-pro-preview": 0.9333333333333333,
+    "gemini-3.6-flash": 0.6666666666666666,
+    "gemini-3.7-flash": 0.36666666666666664,
+    "gemini-3.8-flash": 0.4666666666666667,
+    "glm-5.3": 0.16666666666666666,
+    "glm-5.3-flash": 0.1,
+    "gpt-5.5": 0.5333333333333333,
+    "gpt-5.6-luna": 0.5333333333333333,
+    "gpt-5.6-sol": 0.3,
+    "gpt-5.6-terra": 0.36666666666666664,
+    "gpt-6-astra": 0.8666666666666667,
+    "kimi-k3": 0.06666666666666667,
+    "qwen3.8-max": 0.6333333333333333
+   },
+   "support": {
+    "claude-fable-5": 30,
+    "claude-opus-4-6": 30,
+    "claude-opus-4-8": 30,
+    "claude-opus-5": 30,
+    "claude-sonnet-5": 30,
+    "gemini-3.1-pro-preview": 30,
+    "gemini-3.6-flash": 30,
+    "gemini-3.7-flash": 30,
+    "gemini-3.8-flash": 30,
+    "glm-5.3": 30,
+    "glm-5.3-flash": 30,
+    "gpt-5.5": 30,
+    "gpt-5.6-luna": 30,
+    "gpt-5.6-sol": 30,
+    "gpt-5.6-terra": 30,
+    "gpt-6-astra": 30,
+    "kimi-k3": 30,
+    "qwen3.8-max": 30
+   }
+  },
+  {
+   "fold": 1,
+   "bacc": 0.4185185185185185,
+   "n": 540,
+   "accuracy": 0.4185185185185185,
+   "per_class_recall": {
+    "claude-fable-5": 0.1,
+    "claude-opus-4-6": 0.6,
+    "claude-opus-4-8": 0.2,
+    "claude-opus-5": 0.7333333333333333,
+    "claude-sonnet-5": 0.43333333333333335,
+    "gemini-3.1-pro-preview": 0.9,
+    "gemini-3.6-flash": 0.5333333333333333,
+    "gemini-3.7-flash": 0.4666666666666667,
+    "gemini-3.8-flash": 0.43333333333333335,
+    "glm-5.3": 0.1,
+    "glm-5.3-flash": 0.3333333333333333,
+    "gpt-5.5": 0.4666666666666667,
+    "gpt-5.6-luna": 0.36666666666666664,
+    "gpt-5.6-sol": 0.2,
+    "gpt-5.6-terra": 0.3,
+    "gpt-6-astra": 0.7333333333333333,
+    "kimi-k3": 0.03333333333333333,
+    "qwen3.8-max": 0.6
+   },
+   "support": {
+    "claude-fable-5": 30,
+    "claude-opus-4-6": 30,
+    "claude-opus-4-8": 30,
+    "claude-opus-5": 30,
+    "claude-sonnet-5": 30,
+    "gemini-3.1-pro-preview": 30,
+    "gemini-3.6-flash": 30,
+    "gemini-3.7-flash": 30,
+    "gemini-3.8-flash": 30,
+    "glm-5.3": 30,
+    "glm-5.3-flash": 30,
+    "gpt-5.5": 30,
+    "gpt-5.6-luna": 30,
+    "gpt-5.6-sol": 30,
+    "gpt-5.6-terra": 30,
+    "gpt-6-astra": 30,
+    "kimi-k3": 30,
+    "qwen3.8-max": 30
+   }
+  },
+  {
+   "fold": 2,
+   "bacc": 0.45370370370370366,
+   "n": 540,
+   "accuracy": 0.4537037037037037,
+   "per_class_recall": {
+    "claude-fable-5": 0.13333333333333333,
+    "claude-opus-4-6": 0.5333333333333333,
+    "claude-opus-4-8": 0.36666666666666664,
+    "claude-opus-5": 0.8666666666666667,
+    "claude-sonnet-5": 0.5333333333333333,
+    "gemini-3.1-pro-preview": 0.9666666666666667,
+    "gemini-3.6-flash": 0.5,
+    "gemini-3.7-flash": 0.5333333333333333,
+    "gemini-3.8-flash": 0.2,
+    "glm-5.3": 0.16666666666666666,
+    "glm-5.3-flash": 0.26666666666666666,
+    "gpt-5.5": 0.6,
+    "gpt-5.6-luna": 0.36666666666666664,
+    "gpt-5.6-sol": 0.26666666666666666,
+    "gpt-5.6-terra": 0.43333333333333335,
+    "gpt-6-astra": 0.8333333333333334,
+    "kimi-k3": 0.03333333333333333,
+    "qwen3.8-max": 0.5666666666666667
+   },
+   "support": {
+    "claude-fable-5": 30,
+    "claude-opus-4-6": 30,
+    "claude-opus-4-8": 30,
+    "claude-opus-5": 30,
+    "claude-sonnet-5": 30,
+    "gemini-3.1-pro-preview": 30,
+    "gemini-3.6-flash": 30,
+    "gemini-3.7-flash": 30,
+    "gemini-3.8-flash": 30,
+    "glm-5.3": 30,
+    "glm-5.3-flash": 30,
+    "gpt-5.5": 30,
+    "gpt-5.6-luna": 30,
+    "gpt-5.6-sol": 30,
+    "gpt-5.6-terra": 30,
+    "gpt-6-astra": 30,
+    "kimi-k3": 30,
+    "qwen3.8-max": 30
+   }
+  },
+  {
+   "fold": 3,
+   "bacc": 0.4018518518518518,
+   "n": 540,
+   "accuracy": 0.40185185185185185,
+   "per_class_recall": {
+    "claude-fable-5": 0.16666666666666666,
+    "claude-opus-4-6": 0.43333333333333335,
+    "claude-opus-4-8": 0.3,
+    "claude-opus-5": 0.8333333333333334,
+    "claude-sonnet-5": 0.26666666666666666,
+    "gemini-3.1-pro-preview": 0.8333333333333334,
+    "gemini-3.6-flash": 0.7,
+    "gemini-3.7-flash": 0.5,
+    "gemini-3.8-flash": 0.3,
+    "glm-5.3": 0.23333333333333334,
+    "glm-5.3-flash": 0.13333333333333333,
+    "gpt-5.5": 0.5333333333333333,
+    "gpt-5.6-luna": 0.3,
+    "gpt-5.6-sol": 0.2,
+    "gpt-5.6-terra": 0.26666666666666666,
+    "gpt-6-astra": 0.6333333333333333,
+    "kimi-k3": 0.0,
+    "qwen3.8-max": 0.6
+   },
+   "support": {
+    "claude-fable-5": 30,
+    "claude-opus-4-6": 30,
+    "claude-opus-4-8": 30,
+    "claude-opus-5": 30,
+    "claude-sonnet-5": 30,
+    "gemini-3.1-pro-preview": 30,
+    "gemini-3.6-flash": 30,
+    "gemini-3.7-flash": 30,
+    "gemini-3.8-flash": 30,
+    "glm-5.3": 30,
+    "glm-5.3-flash": 30,
+    "gpt-5.5": 30,
+    "gpt-5.6-luna": 30,
+    "gpt-5.6-sol": 30,
+    "gpt-5.6-terra": 30,
+    "gpt-6-astra": 30,
+    "kimi-k3": 30,
+    "qwen3.8-max": 30
+   }
+  },
+  {
+   "fold": 4,
+   "bacc": 0.4668582375478927,
+   "n": 539,
+   "accuracy": 0.4675324675324675,
+   "per_class_recall": {
+    "claude-fable-5": 0.10344827586206896,
+    "claude-opus-4-6": 0.6333333333333333,
+    "claude-opus-4-8": 0.3333333333333333,
+    "claude-opus-5": 0.8666666666666667,
+    "claude-sonnet-5": 0.6666666666666666,
+    "gemini-3.1-pro-preview": 0.9,
+    "gemini-3.6-flash": 0.8666666666666667,
+    "gemini-3.7-flash": 0.4,
+    "gemini-3.8-flash": 0.3,
+    "glm-5.3": 0.2,
+    "glm-5.3-flash": 0.3,
+    "gpt-5.5": 0.7,
+    "gpt-5.6-luna": 0.36666666666666664,
+    "gpt-5.6-sol": 0.1,
+    "gpt-5.6-terra": 0.36666666666666664,
+    "gpt-6-astra": 0.7333333333333333,
+    "kimi-k3": 0.06666666666666667,
+    "qwen3.8-max": 0.5
+   },
+   "support": {
+    "claude-fable-5": 29,
+    "claude-opus-4-6": 30,
+    "claude-opus-4-8": 30,
+    "claude-opus-5": 30,
+    "claude-sonnet-5": 30,
+    "gemini-3.1-pro-preview": 30,
+    "gemini-3.6-flash": 30,
+    "gemini-3.7-flash": 30,
+    "gemini-3.8-flash": 30,
+    "glm-5.3": 30,
+    "glm-5.3-flash": 30,
+    "gpt-5.5": 30,
+    "gpt-5.6-luna": 30,
+    "gpt-5.6-sol": 30,
+    "gpt-5.6-terra": 30,
+    "gpt-6-astra": 30,
+    "kimi-k3": 30,
+    "qwen3.8-max": 30
+   }
+  }
+ ],
+ "confusion_matrix": [
+  [
+   23,
+   11,
+   10,
+   34,
+   9,
+   4,
+   3,
+   1,
+   3,
+   24,
+   18,
+   2,
+   1,
+   1,
+   0,
+   1,
+   2,
+   2
+  ],
+  [
+   5,
+   80,
+   5,
+   11,
+   14,
+   6,
+   9,
+   5,
+   1,
+   3,
+   4,
+   0,
+   0,
+   0,
+   1,
+   6,
+   0,
+   0
+  ],
+  [
+   10,
+   10,
+   44,
+   10,
+   19,
+   10,
+   3,
+   5,
+   2,
+   10,
+   13,
+   3,
+   0,
+   1,
+   1,
+   7,
+   0,
+   2
+  ],
+  [
+   1,
+   1,
+   2,
+   125,
+   4,
+   3,
+   0,
+   0,
+   0,
+   3,
+   6,
+   1,
+   1,
+   0,
+   0,
+   3,
+   0,
+   0
+  ],
+  [
+   7,
+   9,
+   10,
+   10,
+   73,
+   4,
+   5,
+   3,
+   1,
+   6,
+   8,
+   6,
+   1,
+   2,
+   1,
+   3,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   136,
+   8,
+   3,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   25,
+   98,
+   18,
+   8,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   18,
+   25,
+   68,
+   39,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   1,
+   0,
+   0,
+   0,
+   15,
+   20,
+   63,
+   51,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   8,
+   5,
+   6,
+   44,
+   7,
+   2,
+   3,
+   2,
+   2,
+   26,
+   26,
+   5,
+   0,
+   0,
+   1,
+   5,
+   5,
+   3
+  ],
+  [
+   6,
+   5,
+   5,
+   30,
+   16,
+   3,
+   1,
+   0,
+   1,
+   30,
+   34,
+   3,
+   1,
+   0,
+   2,
+   6,
+   6,
+   1
+  ],
+  [
+   1,
+   1,
+   0,
+   3,
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   85,
+   9,
+   8,
+   14,
+   7,
+   3,
+   16
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   15,
+   58,
+   17,
+   16,
+   29,
+   0,
+   8
+  ],
+  [
+   0,
+   0,
+   2,
+   4,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   19,
+   25,
+   32,
+   18,
+   36,
+   2,
+   10
+  ],
+  [
+   0,
+   0,
+   0,
+   6,
+   0,
+   1,
+   0,
+   0,
+   3,
+   0,
+   1,
+   26,
+   21,
+   13,
+   52,
+   17,
+   2,
+   8
+  ],
+  [
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   8,
+   6,
+   4,
+   12,
+   114,
+   0,
+   2
+  ],
+  [
+   4,
+   2,
+   4,
+   25,
+   6,
+   2,
+   0,
+   0,
+   0,
+   6,
+   6,
+   43,
+   2,
+   7,
+   7,
+   6,
+   6,
+   24
+  ],
+  [
+   1,
+   1,
+   2,
+   5,
+   2,
+   3,
+   4,
+   1,
+   4,
+   0,
+   1,
+   20,
+   8,
+   2,
+   5,
+   4,
+   0,
+   87
+  ]
+ ],
+ "confusion_axis": "rows = true class, cols = predicted class, order = labels",
+ "top_pairs": [
+  {
+   "count": 63,
+   "true": "gemini-3.8-flash",
+   "pred": "gemini-3.7-flash",
+   "family": "google",
+   "same_family": true
+  },
+  {
+   "count": 44,
+   "true": "glm-5.3",
+   "pred": "claude-opus-5",
+   "family": "zai",
+   "same_family": false
+  },
+  {
+   "count": 43,
+   "true": "kimi-k3",
+   "pred": "gpt-5.5",
+   "family": "moonshot",
+   "same_family": false
+  },
+  {
+   "count": 39,
+   "true": "gemini-3.7-flash",
+   "pred": "gemini-3.8-flash",
+   "family": "google",
+   "same_family": true
+  },
+  {
+   "count": 36,
+   "true": "gpt-5.6-sol",
+   "pred": "gpt-6-astra",
+   "family": "openai",
+   "same_family": true
+  },
+  {
+   "count": 34,
+   "true": "claude-fable-5",
+   "pred": "claude-opus-5",
+   "family": "anthropic",
+   "same_family": true
+  },
+  {
+   "count": 30,
+   "true": "glm-5.3-flash",
+   "pred": "claude-opus-5",
+   "family": "zai",
+   "same_family": false
+  },
+  {
+   "count": 30,
+   "true": "glm-5.3-flash",
+   "pred": "glm-5.3",
+   "family": "zai",
+   "same_family": true
+  },
+  {
+   "count": 29,
+   "true": "gpt-5.6-luna",
+   "pred": "gpt-6-astra",
+   "family": "openai",
+   "same_family": true
+  },
+  {
+   "count": 26,
+   "true": "glm-5.3",
+   "pred": "glm-5.3-flash",
+   "family": "zai",
+   "same_family": true
+  },
+  {
+   "count": 26,
+   "true": "gpt-5.6-terra",
+   "pred": "gpt-5.5",
+   "family": "openai",
+   "same_family": true
+  },
+  {
+   "count": 25,
+   "true": "gemini-3.6-flash",
+   "pred": "gemini-3.1-pro-preview",
+   "family": "google",
+   "same_family": true
+  }
+ ],
+ "families_stats": {
+  "n": 2699,
+  "n_correct": 1192,
+  "n_errors": 1507,
+  "accuracy": 0.44164505372360136,
+  "intra_family_errors": 811,
+  "cross_family_errors": 696,
+  "intra_family_fraction": 0.5381552753815527,
+  "family_matrix": [
+   [
+    537,
+    68,
+    95,
+    42,
+    3,
+    4
+   ],
+   [
+    1,
+    596,
+    1,
+    2,
+    0,
+    0
+   ],
+   [
+    132,
+    14,
+    116,
+    23,
+    11,
+    4
+   ],
+   [
+    25,
+    10,
+    3,
+    661,
+    7,
+    44
+   ],
+   [
+    41,
+    2,
+    12,
+    65,
+    6,
+    24
+   ],
+   [
+    11,
+    12,
+    1,
+    39,
+    0,
+    87
+   ]
+  ],
+  "per_family": {
+   "anthropic": {
+    "n_classes": 5,
+    "n_rows": 749,
+    "family_recall": 0.7169559412550067,
+    "n_family_correct": 749,
+    "conditional_acc": 0.4606141522029373,
+    "overall_recall": 0.4606141522029373
+   },
+   "google": {
+    "n_classes": 4,
+    "n_rows": 600,
+    "family_recall": 0.9933333333333333,
+    "n_family_correct": 600,
+    "conditional_acc": 0.5883333333333334,
+    "overall_recall": 0.5883333333333334
+   },
+   "zai": {
+    "n_classes": 2,
+    "n_rows": 300,
+    "family_recall": 0.38666666666666666,
+    "n_family_correct": 300,
+    "conditional_acc": 0.2,
+    "overall_recall": 0.2
+   },
+   "openai": {
+    "n_classes": 5,
+    "n_rows": 750,
+    "family_recall": 0.8813333333333333,
+    "n_family_correct": 750,
+    "conditional_acc": 0.45466666666666666,
+    "overall_recall": 0.45466666666666666
+   },
+   "moonshot": {
+    "n_classes": 1,
+    "n_rows": 150,
+    "family_recall": 0.04,
+    "n_family_correct": 150,
+    "conditional_acc": 0.04,
+    "overall_recall": 0.04
+   },
+   "qwen": {
+    "n_classes": 1,
+    "n_rows": 150,
+    "family_recall": 0.58,
+    "n_family_correct": 150,
+    "conditional_acc": 0.58,
+    "overall_recall": 0.58
+   }
+  },
+  "oracle_family_projected_bacc": 0.7420681083768331
+ },
+ "examples": [
+  {
+   "true": "gemini-3.8-flash",
+   "pred": "gemini-3.7-flash",
+   "count": 63,
+   "examples": [
+    {
+     "idx": 31,
+     "prompt_group": "tr:p131",
+     "text": "Constructing a Dyson sphere represents a civilization\u2019s triumphant ascension from planetary fragility to cosmic immortality, fundamentally reshaping their destiny across an artificial firmament. By harnessing the totality of their captive star, these cosmic architects extinguish scarcity forever, tr"
+    },
+    {
+     "idx": 35,
+     "prompt_group": "tr:p008",
+     "text": "Across the velvet abyss, ascending civilizations transcend the humble cradle of their birth to claim the architecture of the cosmos. First arise the planetary masters, who tame seismic tempests and orchestrate their homeworld's volcanic fury into a unified pulse of clean planetary power. Yet their a"
+    },
+    {
+     "idx": 76,
+     "prompt_group": "tr:p071",
+     "text": "Consider the walking mirror: an entity that laughs at jokes, weeps at graveyards, and eloquently debates mortality, yet shelters absolute void within. In Chalmers\u2019 haunting thought experiment, this duplicate moves through the world physically indistinguishable from you, executing every subtle reflex"
+    },
+    {
+     "idx": 81,
+     "prompt_group": "tr:p046",
+     "text": "For fifteen centuries, Egypt lay locked in profound silence, its monumental hieroglyphs reduced to mute, decorative riddles. Then, in 1822, Champollion finally cracked the Rosetta Stone\u2019s trilingual code. Instantly, the ancient darkness broke. Pharaohs, priests, and forgotten scribes began to speak "
+    },
+    {
+     "idx": 100,
+     "prompt_group": "tr:p077",
+     "text": "Suppose the heavens are merely painted linen and the floor beneath your soles a tapestry woven by an industrious fiend. To gaze into the world under such an unsettling suspicion is to suffer a sudden, sickening vertigo, as if every solid masonry of reality had dissolved into thin air. Flesh becomes "
+    },
+    {
+     "idx": 217,
+     "prompt_group": "tr:p028",
+     "text": "Pulled from the sunless Aegean abyss among shattered amphorae and barnacled marble, the lump of encrusted verdigris resembled nothing more than an unremarkable stone. Yet beneath centuries of petrified marine sediment lay antiquity\u2019s most astonishing secret: a bronze cosmos frozen in corrosion. Meti"
+    },
+    {
+     "idx": 242,
+     "prompt_group": "tr:p128",
+     "text": "Nature optimizes through iterative growth, casting recursive echoes across scales. From foaming waves fracturing rocky shorelines to the chartreuse, spiraled florets of Romanesco broccoli, simple instructions repeat endlessly. These Mandelbrot geometries bloom everywhere because recursive branching "
+    },
+    {
+     "idx": 263,
+     "prompt_group": "tr:p119",
+     "text": "Deep within Antarctic ice cores, microscopic bubbles suspend the primordial breath of an unremembered world. Trapped inside these pressurized chambers, ash and sulfurous exhalations from prehistoric eruptions linger undisturbed, sealing ancient atmospheres in timeless blue silence, awaiting the quie"
+    }
+   ]
+  },
+  {
+   "true": "glm-5.3",
+   "pred": "claude-opus-5",
+   "count": 44,
+   "examples": [
+    {
+     "idx": 138,
+     "prompt_group": "tr:p042",
+     "text": "Network effects work because connections multiply faster than members: add one person to a network of two and you triple the possible links. Each newcomer enriches everyone already present, so value doesn't grow linearly\u2014it compounds explosively, turning empty platforms into indispensable infrastruc"
+    },
+    {
+     "idx": 145,
+     "prompt_group": "tr:p137",
+     "text": "Spewed from the sun's turbulent surface, charged particles stream across ninety-three million miles of void, arriving as solar wind. When they strike Earth's magnetosphere, the magnetic shield deflects most, but funnels others toward the poles. There, in the thin upper atmosphere, electrons slam int"
+    },
+    {
+     "idx": 169,
+     "prompt_group": "tr:p054",
+     "text": "Within a single human lifetime, the luminous web binding the eastern Mediterranean\u2014Mycenae's lion-gated palaces, Hattusa's storm-kissed citadels, Ugarit's harbors heaped with Cypriot copper and amber\u2014unraveled as though severed by an unseen hand. No single blade did it. Drought withered the barley; "
+    },
+    {
+     "idx": 232,
+     "prompt_group": "tr:p125",
+     "text": "Stand before a cliff face of sedimentary rock and you are reading a page torn from a library four and a half billion years old. Every empire, every dynasty, every revolution that ever fired the human imagination\u2014Sumer's first scribes pressing reeds into clay, Rome's legions marching, the smokestacks"
+    },
+    {
+     "idx": 233,
+     "prompt_group": "tr:p021",
+     "text": "Imagine you have a red ball and a green ball, and your friend is colorblind, so they genuinely cannot tell them apart. You want to convince your friend that the balls are different colors\u2014but without ever telling them which is red and which is green. Here's how you do it: you hand both balls to your"
+    },
+    {
+     "idx": 318,
+     "prompt_group": "tr:p023",
+     "text": "Four billion years ago, young Jupiter rolled inward through the solar system like a cosmic bowling ball hurtling down the lanes of creation. Its immense gravity scattered primordial planetesimals like pins \u2014 flinging some toward the sun, hurling others into the void, shattering the orderly architect"
+    },
+    {
+     "idx": 337,
+     "prompt_group": "tr:p136",
+     "text": "Along the boundary of the Mandelbrot set, mathematics forgets how to end. Here the simple iteration z becomes z squared plus c, repeated without mercy, decides for every point whether it stays or flees\u2014and the frontier between those fates is infinitely long. Zoom in, and the coastline never straight"
+    },
+    {
+     "idx": 444,
+     "prompt_group": "tr:p064",
+     "text": "The clock on your forearm still ticks, patient and ordinary, but out here it has become a liar. You feel nothing\u2014no slowing, no heaviness, no warning in the blood\u2014and that is the cruelest part. Time dilation wears no texture, carries no weight; it is simply the universe quietly disagreeing with you "
+    }
+   ]
+  },
+  {
+   "true": "kimi-k3",
+   "pred": "gpt-5.5",
+   "count": 43,
+   "examples": [
+    {
+     "idx": 143,
+     "prompt_group": "tr:p108",
+     "text": "A torn leaf exhales green and sharp, a crushed-grass brightness riding the warm breeze. Methyl jasmonate drifts like invisible smoke, bitter on the tongue, resinous in the nose, slipping over the fence line to neighboring stems. Undamaged leaves tighten, taste suddenly of tannin and pepper; tiny sto"
+    },
+    {
+     "idx": 148,
+     "prompt_group": "tr:p017",
+     "text": "Rule 110 is almost absurdly modest: an infinite row of cells, each either black or white, updated by inspecting only its left neighbor, itself, and its right neighbor. From that three-bit glance come eight possible situations and one binary answer, repeated forever. Yet inside those flickering bound"
+    },
+    {
+     "idx": 215,
+     "prompt_group": "tr:p126",
+     "text": "Say \u201clamp\u201d fifty times and watch your brain file for divorce: the cozy object slips its leash, leaving one shiny syllable clacking around your mouth like a haunted marble. Psychology calls it semantic satiation; your tongue calls it Tuesday, suddenly fluent in elegant nonsense and weirdly proud of t"
+    },
+    {
+     "idx": 309,
+     "prompt_group": "tr:p089",
+     "text": "The lever is almost clean: a fist around cold steel, a whisper of hydraulics, one body substituted for five while arithmetic nods like a chaplain over the bed. He has not volunteered, cannot consent, and his ordinary errands\u2014milk, keys, a message half-typed\u2014refuse to become public property merely be"
+    },
+    {
+     "idx": 376,
+     "prompt_group": "tr:p011",
+     "text": "In three dimensions a neighborhood feels snug: step a little left or right and you remain among friends. Add a fourth axis and the room acquires a secret door; add a thousand, and every point becomes a hermit at the center of an enormous hollow sphere. Almost all the volume flees to the shell, almos"
+    },
+    {
+     "idx": 448,
+     "prompt_group": "tr:p020",
+     "text": "Before atoms, before light had anywhere to go, the newborn universe underwent inflation, a violence beyond thunder, when space itself did not move through space but ballooned, doubling and redoubling in a fraction so small that time seemed to scream. Patches once touching were flung apart faster tha"
+    },
+    {
+     "idx": 495,
+     "prompt_group": "tr:p045",
+     "text": "For millennia, China guarded sericulture like a state secret: mulberry, moth, and shimmering thread bound to imperial power. Revealing techniques or carrying silkworm eggs abroad meant death, yet legend says a princess hid eggs in her headdress, spinning silk\u2019s mystery toward distant kingdoms."
+    },
+    {
+     "idx": 553,
+     "prompt_group": "tr:p030",
+     "text": "Her mind is not a lantern in the skull but a tide moving through eight hinged constellations; each arm tastes the dark, argues in suction cups, remembers stones by their bruises, and solves the crevice before any center agrees to name it. Thought ripples outward, blue with copper blood, while skin e"
+    }
+   ]
+  }
+ ],
+ "fit_meta": {
+  "f3/funcword": {
+   "n_features": 20000,
+   "fit_seconds": 15.2
+  },
+  "f2/funcword": {
+   "n_features": 20000,
+   "fit_seconds": 14.8
+  },
+  "f1/funcword": {
+   "n_features": 20000,
+   "fit_seconds": 15.0
+  },
+  "f4/funcword": {
+   "n_features": 20000,
+   "fit_seconds": 13.7
+  },
+  "f0/funcword": {
+   "n_features": 20000,
+   "fit_seconds": 13.1
+  },
+  "f1/word13": {
+   "n_features": 200000,
+   "fit_seconds": 34.5
+  },
+  "f3/word13": {
+   "n_features": 200000,
+   "fit_seconds": 30.9
+  },
+  "f2/word13": {
+   "n_features": 200000,
+   "fit_seconds": 34.3
+  },
+  "f0/word13": {
+   "n_features": 200000,
+   "fit_seconds": 34.9
+  },
+  "f4/word13": {
+   "n_features": 200000,
+   "fit_seconds": 39.5
+  },
+  "f0/word26raw": {
+   "n_features": 100000,
+   "fit_seconds": 18.1
+  },
+  "f3/word26raw": {
+   "n_features": 100000,
+   "fit_seconds": 18.2
+  },
+  "f4/word26raw": {
+   "n_features": 100000,
+   "fit_seconds": 15.9
+  },
+  "f2/word26raw": {
+   "n_features": 100000,
+   "fit_seconds": 21.9
+  },
+  "f1/word26raw": {
+   "n_features": 100000,
+   "fit_seconds": 19.1
+  },
+  "f4/char_wb35": {
+   "n_features": 265229,
+   "fit_seconds": 200.1
+  },
+  "f0/char_wb35": {
+   "n_features": 265242,
+   "fit_seconds": 198.5
+  },
+  "f1/char_wb35": {
+   "n_features": 265297,
+   "fit_seconds": 203.4
+  },
+  "f3/char_wb35": {
+   "n_features": 265383,
+   "fit_seconds": 201.9
+  },
+  "f2/char_wb35": {
+   "n_features": 265213,
+   "fit_seconds": 222.8
+  }
+ },
+ "runtime_minutes": 9.1
+}

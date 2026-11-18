@@ -1,0 +1,36 @@
+# data and artefacts that must never be committed
+data/
+pools/
+*.parquet
+*.npy
+*.npz
+*.safetensors
+*.gguf
+*.pt
+*.bin
+submission*.csv
+submission*.parquet
+dl_members/
+dl_foldens/
+dataset_out/
+dataset_foldens/
+dataset_pool/
+pullback/
+notebooks*/
+srcs*/
+blobs*/
+md/
+__pycache__/
+*.pyc
+
+# credentials and machine-specific files
+.kaggle/
+.kaggle_key
+*.pem
+*.key
+id_rsa*
+.nfs*
+
+# logs are large and machine-specific; the summaries live in results/ and the reports
+logs/
+*.log
